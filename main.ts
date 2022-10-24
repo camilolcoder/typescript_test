@@ -3,7 +3,9 @@ import { Serie } from "./serie";
 
 let seriesTbody: HTMLElement = document.getElementById("series")!;
 const avgSeas: HTMLElement = document.getElementById("avg_seasons")!;
-
+const btnSerieTitle: HTMLElement = document.getElementById("serie_title")!;
+const btnSerieDes: HTMLElement = document.getElementById("description")!;
+const btnSerieLink: HTMLElement = document.getElementById("link_serie")!;
 
 renderSeriesInTable(series_m);
 
@@ -25,3 +27,4 @@ function getAvgSeasons(series: Serie[]): number {
     series.forEach((serie) => total_avg = (total_avg + serie.seasons)/2);
     return total_avg;
   }
+
